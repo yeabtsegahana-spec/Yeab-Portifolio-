@@ -1,11 +1,259 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yeabtega Hana | Portfolio</title>
+    <meta
+      name="description"
+      content="Personal portfolio website for Yeab Tsegahana, featuring projects, skills, and contact information."
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container navbar">
+        <a href="#home" class="brand">Yeab</a>
+
+        <button class="menu-toggle" aria-label="Open menu">☰</button>
+
+        <nav class="nav-menu" aria-label="Main navigation">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section id="home" class="hero reveal">
+        <div class="container hero-grid">
+          <div class="hero-copy reveal">
+            <span class="section-tag">Frontend Developer</span>
+            <h1>Hi, I'm Yeab Tsegahana.</h1>
+            <p>
+              I build clean, responsive, and user-friendly web experiences with a
+              strong focus on design, usability, and performance.
+            </p>
+
+            <div class="hero-actions">
+              <a href="#projects" class="btn btn-primary">View Projects</a>
+              <a href="#contact" class="btn btn-secondary">Contact Me</a>
+            </div>
+          </div>
+
+          <div class="hero-card reveal">
+            <div class="profile-box reveal">
+              <div class="profile-image">YT</div>
+              <div class="info-list">
+                <div class="info-item">
+                  <span>Role</span>
+                  <strong>Developer</strong>
+                </div>
+                <div class="info-item">
+                  <span>Focus</span>
+                  <strong>Web Design</strong>
+                </div>
+                <div class="info-item">
+                  <span>Location</span>
+                  <strong>Ethiopia</strong>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="reveal">
+        <div class="container">
+          <span class="section-tag">About</span>
+          <h2>Building simple experiences with real impact.</h2>
+
+          <div class="grid about-grid">
+            <div class="card reveal">
+              <p>
+                I am a web developer focused on creating neat, modern, and effective
+                interfaces. I enjoy turning ideas into clean websites that are easy to
+                use and look professional.
+              </p>
+              <p>
+                My interests include front-end development, user experience, responsive
+                design, and continuous learning in web technologies.
+              </p>
+            </div>
+
+            <div class="card reveal">
+              <p>
+                I like solving practical problems through thoughtful design and clean
+                code. I aim to build experiences that are easy to understand, visually
+                consistent, and useful for real people.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="reveal">
+        <div class="container">
+          <span class="section-tag">Skills</span>
+          <h2>Tools and technologies I work with.</h2>
+
+          <div class="skill-list">
+            <div class="skill-item reveal">
+              <h3>Frontend</h3>
+              <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Responsive UI</li>
+              </ul>
+            </div>
+
+            <div class="skill-item reveal">
+              <h3>Design</h3>
+              <ul>
+                <li>UI Design</li>
+                <li>Layouts</li>
+                <li>Figma</li>
+                <li>Branding</li>
+              </ul>
+            </div>
+
+            <div class="skill-item reveal">
+              <h3>Workflow</h3>
+              <ul>
+                <li>Git</li>
+                <li>GitHub</li>
+                <li>VS Code</li>
+                <li>Debugging</li>
+              </ul>
+            </div>
+
+            <div class="skill-item reveal">
+              <h3>Learning</h3>
+              <ul>
+                <li>Problem Solving</li>
+                <li>Accessibility</li>
+                <li>Performance</li>
+                <li>Clean Code</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="reveal">
+        <div class="container">
+          <span class="section-tag">Projects</span>
+          <h2>Selected work.</h2>
+
+          <div class="project-list">
+            <article class="project-card reveal">
+              <div class="project-thumb" aria-hidden="true"></div>
+              <div class="project-body">
+                <h3>Portfolio Website</h3>
+                <div class="tag-list">
+                  <span class="tag">HTML</span>
+                  <span class="tag">CSS</span>
+                  <span class="tag">JS</span>
+                </div>
+                <p>
+                  A personal portfolio to present skills, projects, and contact details in a polished format.
+                </p>
+                <div class="project-links">
+                  <a href="#">Demo</a>
+                  <a href="#">Code</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card reveal">
+              <div class="project-thumb" aria-hidden="true"></div>
+              <div class="project-body">
+                <h3>Landing Page</h3>
+                <div class="tag-list">
+                  <span class="tag">HTML</span>
+                  <span class="tag">CSS</span>
+                </div>
+                <p>
+                  A responsive marketing page designed to highlight a product or service in a clean and modern way.
+                </p>
+                <div class="project-links">
+                  <a href="#">Demo</a>
+                  <a href="#">Code</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card reveal">
+              <div class="project-thumb" aria-hidden="true"></div>
+              <div class="project-body">
+                <h3>Interactive UI</h3>
+                <div class="tag-list">
+                  <span class="tag">JavaScript</span>
+                  <span class="tag">CSS</span>
+                </div>
+                <p>
+                  A small interaction-focused design with responsive elements and polished user feedback.
+                </p>
+                <div class="project-links">
+                  <a href="#">Demo</a>
+                  <a href="#">Code</a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="reveal">
+        <div class="container">
+          <span class="section-tag">Contact</span>
+          <h2>Let's work together.</h2>
+
+          <div class="grid contact-grid">
+            <div class="card reveal">
+              <form class="contact-form">
+                <input type="text" placeholder="Your name" aria-label="Your name" />
+                <input type="email" placeholder="Your email" aria-label="Your email" />
+                <textarea placeholder="Your message" aria-label="Your message"></textarea>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+              </form>
+            </div>
+
+            <div class="card reveal">
+              <div class="social-list">
+                <div class="social-item reveal">
+                  <strong>Email</strong><br />
+                  yeab@example.com
+                </div>
+                <div class="social-item reveal">
+                  <strong>GitHub</strong><br />
+                  github.com/yeab
+                </div>
+                <div class="social-item reveal">
+                  <strong>LinkedIn</strong><br />
+                  linkedin.com/in/yeab
+                </div>
+                <div class="social-item reveal">
+                  <strong>Location</strong><br />
+                  Addis Ababa
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>© 2026 Yeab Tsegahana. </p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
 </html>
