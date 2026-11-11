@@ -73,3 +73,35 @@ if (contactForm) {
     contactForm.reset();
   });
 }
+
+const loginForm = document.querySelector('.login-form');
+
+if (loginForm) {
+  const message = loginForm.querySelector('.form-message');
+  const submitButton = loginForm.querySelector('button[type="submit"]');
+  const emailInput = loginForm.querySelector('input[type="email"]');
+  const passwordInput = loginForm.querySelector('input[type="password"]');
+
+  loginForm.addEventListener('submit', (event) => {
+    event.preventDefault();
+
+    const email = emailInput.value.trim();
+    const password = passwordInput.value.trim();
+
+    if (!email || !password) {
+      message.textContent = 'Please enter both your email and password.';
+      message.classList.remove('success');
+      message.classList.add('error');
+      return;
+    }
+
+    message.textContent = `Welcome back, ${email}! Redirecting to your portfolio...`;
+    message.classList.remove('error');
+    message.classList.add('success');
+    submitButton.disabled = true;
+
+    setTimeout(() => {
+      window.location.href = 'Index.html';
+    }, 1200);
+  });
+}
